@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-gradient-linear: linear-gradient(
+    27deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+
+  --color-gradient-facebook: linear-gradient(27deg, #63afdb 0%, #6028f1 100%);
+
+  --color-gradient-youtube: linear-gradient(0deg, #d3205a 0%, #ff5a5a 100%);
+
+  --color-gradient-x: linear-gradient(27deg, #65ffeb 0%, #27718a 100%);
+
+  --color-gradient-pinterest: linear-gradient(27deg, #f6c683 0%, #de3838 100%);
+
+  --color-gradient-instagram: linear-gradient(
+    27deg,
+    #ffc593 0%,
+    #bc7198 51.945%,
+    #5a77ff 100%
+  );
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    /* color: hsl(255, 11%, 22%); */
+  }
+  button,
+  input {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply mx-auto w-full max-w-[1050px];
+    /* @apply mx-auto w-full max-w-[1110px] max-[1200px]:max-w-[960px] px-6 lg:px-0; */
+  }
+}
