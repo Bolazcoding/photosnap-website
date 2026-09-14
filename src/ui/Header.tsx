@@ -8,7 +8,7 @@ function Header() {
       <Logo />
       <NavBar />
       <Link to="/" className="bg-black py-2.5 px-8">
-        <button className="text-white text-sm font-semibold tracking-widest">
+        <button className="text-white text-sm font-semibold tracking-widest cursor-pointer">
           Get an invite
         </button>
       </Link>

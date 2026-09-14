@@ -26,6 +26,9 @@ function Cta({ children, className, linkTo, ctaColor }: Props) {
         {children}
       </Link>
       <MoveRight color={ctaColor} size={34} />
+      {/* <svg className="h-[1.4rem] w-[4.5rem] stroke-white">
+        <use xlinkHref="./shared/desktop/arrow.svg#arrow"></use>
+      </svg> */}
     </div>
   );
 }
