@@ -45,4 +45,8 @@
     @apply mx-auto w-full max-w-[1050px];
     /* @apply mx-auto w-full max-w-[1110px] max-[1200px]:max-w-[960px] px-6 lg:px-0; */
   }
+
+  .com-container {
+    @apply mx-auto w-full max-w-[1150px];
+  }
 }
