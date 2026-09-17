@@ -25,6 +25,30 @@
   );
 }
 
+@theme {
+  --color-gradient-linear: linear-gradient(
+    27deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+
+  --color-gradient-facebook: linear-gradient(27deg, #63afdb 0%, #6028f1 100%);
+
+  --color-gradient-youtube: linear-gradient(0deg, #d3205a 0%, #ff5a5a 100%);
+
+  --color-gradient-x: linear-gradient(27deg, #65ffeb 0%, #27718a 100%);
+
+  --color-gradient-pinterest: linear-gradient(27deg, #f6c683 0%, #de3838 100%);
+
+  --color-gradient-instagram: linear-gradient(
+    27deg,
+    #ffc593 0%,
+    #bc7198 51.945%,
+    #5a77ff 100%
+  );
+}
+
 @layer base {
   /* html {
     font-size: 62.5%;
