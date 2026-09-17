@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Cta from "./Cta";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-black">
       <div className="page-container flex items-center justify-between py-15">
@@ -36,7 +38,7 @@ function Footer() {
             Get an invite
           </Cta>
           <p className="text-white/50 text-[15px] font-medium">
-            Copyright 2026. All Rights Reserved
+            Copyright {year}. All Rights Reserved
           </p>
         </div>
       </div>

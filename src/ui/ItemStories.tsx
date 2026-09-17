@@ -2,10 +2,11 @@ import { MoveRight } from "lucide-react";
 
 function ItemStories({
   desktopImage,
-  tabletImage,
+  // tabletImage,
   mobileImage,
   title,
   author,
+  date,
 }) {
   const bgImage = window.innerWidth >= 500 ? desktopImage : mobileImage;
 
@@ -16,6 +17,7 @@ function ItemStories({
       //   whileHover={{ translateY: "-3rem" }}
     >
       <div className="z-10">
+        <p className="text-white text-sm font-medium opacity-60">{date}</p>
         <h2 className="text-white text-lg font-bold">{title}</h2>
         <p className="text-white text-sm font-medium opacity-60">by {author}</p>
       </div>

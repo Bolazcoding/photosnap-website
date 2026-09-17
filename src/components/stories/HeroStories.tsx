@@ -1,10 +1,11 @@
 function HeroStories() {
+  const bgImage = "./stories/desktop/moon-of-appalacia.jpg";
   return (
     <section
       style={{
-        backgroundImage: `url(./stories/desktop/moon-of-appalacia.jpg)`,
+        backgroundImage: `url(${bgImage})`,
       }}
-      className="relative h-screen bg-repeat-round"
+      className="relative h-screen bg-no-repeat"
     >
       <div className="com-container py-24 z-10">
         <p className="text-white text-[13px] font-bold tracking-widest uppercase">

@@ -38,7 +38,7 @@ function HomeStories() {
         <ItemStories
           key={item.title}
           desktopImage={item.desktopImage}
-          tabletImage={item.tabletImage}
+          // tabletImage={item.tabletImage}
           mobileImage={item.mobileImage}
           title={item.title}
           author={item.author}
