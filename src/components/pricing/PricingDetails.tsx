@@ -1,11 +1,19 @@
+import BetaImage from "../../ui/BetaImage";
+import Footer from "../../ui/Footer";
 import Header from "../../ui/Header";
-import HeroPrice from "./HeroPrice";
+import PricingComparison from "./PricingComparison";
+import PricingHero from "./PricingHero";
+import PricingPlans from "./PricingPlans";
 
 function PricingDetails() {
   return (
     <>
       <Header />
-      <HeroPrice />
+      <PricingHero />
+      <PricingPlans />
+      <PricingComparison />
+      <BetaImage />
+      <Footer />
     </>
   );
 }

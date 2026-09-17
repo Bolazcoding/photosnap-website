@@ -20,7 +20,7 @@ const items = [
 
 function HomeFeatures() {
   return (
-    <section className="page-container grid grid-cols-3 items-center gap-5 bg-white">
+    <section className="page-container grid grid-cols-3 items-center gap-5 bg-white pb-28">
       {items.map((item) => (
         <FeatureItem
           key={item.title}

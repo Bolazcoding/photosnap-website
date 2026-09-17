@@ -1,4 +1,4 @@
-function HeroPrice() {
+function PricingHero() {
   return (
     <section className="flex text-white">
       <div className="bg-black py-40 px-28">
@@ -20,4 +20,4 @@ function HeroPrice() {
   );
 }
 
-export default HeroPrice;
+export default PricingHero;

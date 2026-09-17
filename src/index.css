@@ -26,6 +26,10 @@
 }
 
 @layer base {
+  /* html {
+    font-size: 62.5%;
+  } */
+
   * {
     box-sizing: border-box;
   }
@@ -48,5 +52,9 @@
 
   .com-container {
     @apply mx-auto w-full max-w-[1150px];
+  }
+
+  .fontSize {
+    font-size: 62.5%;
   }
 }
