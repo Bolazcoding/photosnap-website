@@ -8,12 +8,12 @@ function FeatureItem({ featureImage, title, text }: FeatureItemProps) {
   return (
     <div className="flex flex-col items-center justify-center text-center">
       <img
-        className="h-18 w-18 object-contain"
+        className="size-[72px] object-contain"
         src={featureImage}
         alt={title}
       />
-      <h2 className="text-black text-lg font-bold mt-12">{title}</h2>
-      <p className="text-black text-[15px] font-normal mt-4 leading-6.5">
+      <h2 className="mt-12 text-lg font-bold text-black">{title}</h2>
+      <p className="mt-4 max-w-[22rem] text-[15px] font-normal leading-6 text-black/60">
         {text}
       </p>
     </div>

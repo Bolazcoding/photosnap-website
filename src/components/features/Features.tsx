@@ -35,7 +35,7 @@ const items = [
 
 function Features() {
   return (
-    <section className="page-container grid grid-cols-3 items-center gap-5 bg-white mb-30">
+    <section className="page-container grid grid-cols-1 items-start gap-16 bg-white px-6 py-20 sm:px-10 md:grid-cols-3 md:gap-8 md:px-0 md:py-28">
       {items.map((item) => (
         <FeatureItem
           key={item.title}
