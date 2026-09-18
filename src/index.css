@@ -70,12 +70,11 @@
 
 @layer components {
   .page-container {
-    @apply mx-auto w-full max-w-[1050px];
-    /* @apply mx-auto w-full max-w-[1110px] max-[1200px]:max-w-[960px] px-6 lg:px-0; */
+    @apply mx-auto w-full max-w-[1110px] max-xl:max-w-[950px] max-lg:max-w-[750px] px-6 sm:px-10 lg:px-12 xl:px-0;
   }
 
   .com-container {
-    @apply mx-auto w-full max-w-[1150px];
+    @apply mx-auto w-full max-w-[1150px] max-[1250px]:max-w-[950px] px-6 sm:px-10 lg:px-12 xl:px-0;
   }
 
   .fontSize {

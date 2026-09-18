@@ -2,12 +2,12 @@ import PricingComparisonItem from "./PricingComparisonItem";
 
 function PricingComparison() {
   return (
-    <section className="px-[20px] pb-[160px] xl:px-[165px] max-sm:pb-[70px]">
-      <h2 className="pb-[60px] text-center text-[40px] font-bold uppercase leading-[48px] tracking-[4.167px]">
+    <section className="px-6 pb-20 sm:px-10 sm:pb-28 lg:px-16 xl:px-[165px] xl:pb-40">
+      <h2 className="pb-10 text-center text-[2rem] font-bold uppercase leading-tight tracking-[0.26rem] sm:pb-[60px] sm:text-[40px] sm:leading-[48px] sm:tracking-[4.167px]">
         Compare
       </h2>
 
-      <section className="mx-auto flex max-w-[731px] flex-col justify-center gap-[22.5px]">
+      <section className="mx-auto flex w-full max-w-[731px] flex-col justify-center gap-[22.5px]">
         <div className="grid grid-cols-[300px_1fr_1fr_1fr] justify-items-center border-b border-solid border-black pb-[22.5px] text-[12px] font-bold uppercase tracking-[2px] max-sm:grid-cols-1">
           <h3 className="justify-self-start">The features</h3>
           <h3 className="max-sm:hidden">basic</h3>

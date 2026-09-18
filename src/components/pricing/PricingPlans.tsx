@@ -13,9 +13,9 @@ function PricingPlans() {
   }
 
   return (
-    <section className="px-[20px] pb-[160px] pt-[60px] sm:px-[50px] sm:pt-[50px] xl:px-[165px] xl:pt-[120px]">
+    <section className="px-6 pb-20 pt-16 sm:px-10 sm:pb-28 md:pt-20 lg:px-16 xl:px-[165px] xl:pb-40 xl:pt-28">
       <div
-        className="flex items-center justify-center gap-[32px] pb-[50px]"
+        className="flex items-center justify-center gap-5 pb-10 sm:gap-8 sm:pb-12"
         onClick={changeType}
       >
         <span
@@ -41,7 +41,7 @@ function PricingPlans() {
         </span>
       </div>
 
-      <section className="mx-auto grid w-full max-w-[1110px] grid-cols-1 items-center gap-[30px] xl:grid-cols-3">
+      <section className="mx-auto grid w-full max-w-[1110px] grid-cols-1 items-center gap-6 lg:grid-cols-3 lg:gap-7">
         <PricingPlansItem
           plan="Basic"
           text="Includes basic usage of our platform. Recommended for new and aspiring photographers."

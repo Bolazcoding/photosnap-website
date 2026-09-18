@@ -1,4 +1,16 @@
-function PricingComparisonItem({ feature, basic, pro, business }) {
+type PricingComparisonItemProps = {
+  feature: string;
+  basic: boolean;
+  pro: boolean;
+  business: boolean;
+};
+
+function PricingComparisonItem({
+  feature,
+  basic,
+  pro,
+  business,
+}: PricingComparisonItemProps) {
   return (
     <div className="grid grid-cols-[300px_1fr_1fr_1fr] justify-items-center border-b border-solid border-[#dfdfdf] pb-[22.5px] text-[12px] font-bold uppercase tracking-[2px] max-sm:grid-cols-3 max-sm:justify-items-start max-sm:gap-y-[15px]">
       <h4 className="justify-self-start pl-[10px] max-sm:col-span-full max-sm:pl-0">
