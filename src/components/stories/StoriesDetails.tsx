@@ -7,8 +7,10 @@ function StoriesDetails() {
   return (
     <>
       <Header />
-      <HeroStories />
-      <StoriesSection />
+      <main>
+        <HeroStories />
+        <StoriesSection />
+      </main>
       <Footer />
     </>
   );
