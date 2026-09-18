@@ -2,12 +2,12 @@ import Cta from "../../ui/Cta";
 
 function BeautifulSection() {
   return (
-    <section className="flex flex-row-reverse text-black h-150">
-      <div className="bg-white py-40 px-28">
-        <h1 className="text-[2.6rem] font-bold uppercase tracking-widest leading-12">
+    <section className="flex flex-col text-black md:min-h-[560px] md:flex-row-reverse">
+      <div className="order-2 flex w-full flex-col justify-center bg-white px-6 py-16 sm:px-10 md:order-1 md:w-[42%] md:px-12 lg:px-28">
+        <h1 className="text-[2rem] font-bold uppercase leading-tight tracking-widest md:text-[2.5rem]">
           Beautiful stories every time.
         </h1>
-        <p className="text-[0.95rem] mt-3.5 leading-6">
+        <p className="mt-4 text-[0.95rem] leading-6 text-black/60">
           We provide design templates to ensure your stories look terrific.
           Easily add photos, text, embed maps and media from other networks.
           Then share your story with everyone.
@@ -17,11 +17,15 @@ function BeautifulSection() {
           View the stories
         </Cta>
       </div>
-      <img
-        className="w-[750px]"
-        src="./home/desktop/beautiful-stories.jpg"
-        alt="hero-image"
-      />
+      <picture className="order-1 block w-full md:order-2 md:w-[58%]">
+        <source media="(max-width: 767px)" srcSet="/home/mobile/beautiful-stories.jpg" />
+        <source media="(max-width: 1023px)" srcSet="/home/tablet/beautiful-stories.jpg" />
+        <img
+          className="h-auto w-full object-cover md:h-full"
+          src="/home/desktop/beautiful-stories.jpg"
+          alt="A desk with creative supplies"
+        />
+      </picture>
     </section>
   );
 }
