@@ -22,22 +22,21 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Olatoyan/photosnap-multi-page-website](https://github.com/Olatoyan/photosnap-multi-page-website)
-- Live Site URL: [https://toyan-photosnap.netlify.app/](https://toyan-photosnap.netlify.app/)
+- Solution URL: [https://github.com/Bolazcoding/photosnap-website](https://github.com/Bolazcoding/photosnap-website)
+- Live Site URL: [https://mobolaji-photosnap-website.vercel.app/](https://mobolaji-photosnap-website.vercel.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
 - [React](https://reactjs.org/) - JS library
+- [Typescript](https://www.typescriptlang.org/) - TypeScript
 - [TailwindCSS](https://tailwindcss.com/) - For styles
 - [Framer Motion](https://www.framer.com/motion/) - For Animations
 
 ## Author
 
-- Frontend Mentor - [@olatoyan](https://www.frontendmentor.io/profile/olatoyan)
-- Twitter - [@Toyan](https://www.twitter.com/_annonnymouss_)
+- Website - [@portfolio](https://adelabu-mobolaji.vercel.app/)
+- Frontend Mentor - [@myusername](https://www.frontendmentor.io/profile/Bolazcoding)
+- Twitter - [@myusername](https://x.com/bj_codes)
