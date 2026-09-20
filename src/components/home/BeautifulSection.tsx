@@ -1,9 +1,16 @@
 import Cta from "../../ui/Cta";
+import { motion } from "framer-motion";
 
 function BeautifulSection() {
   return (
     <section className="flex flex-col text-black md:min-h-[560px] md:flex-row-reverse">
-      <div className="order-2 flex w-full flex-col justify-center bg-white px-6 py-16 sm:px-10 md:order-1 md:w-[42%] md:px-12 lg:px-28">
+      <motion.div
+        className="order-2 flex w-full flex-col justify-center bg-white px-6 py-16 sm:px-10 md:order-1 md:w-[42%] md:px-12 lg:px-28"
+        initial={{ opacity: 0, x: 48 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.35 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      >
         <h1 className="text-[2rem] font-bold uppercase leading-tight tracking-widest md:text-[2.5rem]">
           Beautiful stories every time.
         </h1>
@@ -16,8 +23,14 @@ function BeautifulSection() {
         <Cta className="mt-8" linkTo="/stories" ctaColor="black">
           View the stories
         </Cta>
-      </div>
-      <picture className="order-1 block w-full md:order-2 md:w-[58%]">
+      </motion.div>
+      <motion.picture
+        className="order-1 block w-full md:order-2 md:w-[58%]"
+        initial={{ opacity: 0, x: -48 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.35 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      >
         <source media="(max-width: 767px)" srcSet="/home/mobile/beautiful-stories.jpg" />
         <source media="(max-width: 1023px)" srcSet="/home/tablet/beautiful-stories.jpg" />
         <img
@@ -25,7 +38,7 @@ function BeautifulSection() {
           src="/home/desktop/beautiful-stories.jpg"
           alt="A desk with creative supplies"
         />
-      </picture>
+      </motion.picture>
     </section>
   );
 }

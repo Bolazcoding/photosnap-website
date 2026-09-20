@@ -1,4 +1,5 @@
 import ItemStories from "../../ui/ItemStories";
+import { motion } from "framer-motion";
 
 const items = [
   {
@@ -117,18 +118,39 @@ const items = [
 
 function StoriesSection() {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    <motion.section
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.12 }}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.08 } },
+      }}
+    >
       {items.map((item) => (
-        <ItemStories
+        <motion.div
           key={item.title}
-          desktopImage={item.desktopImage}
-          mobileImage={item.mobileImage}
-          title={item.title}
-          author={item.author}
-          date={item.date}
-        />
+          className="h-full"
+          variants={{
+            hidden: { opacity: 0, y: 32 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+            },
+          }}
+        >
+          <ItemStories
+            desktopImage={item.desktopImage}
+            mobileImage={item.mobileImage}
+            title={item.title}
+            author={item.author}
+            date={item.date}
+          />
+        </motion.div>
       ))}
-    </section>
+    </motion.section>
   );
 }
 

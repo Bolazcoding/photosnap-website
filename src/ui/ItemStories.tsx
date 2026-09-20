@@ -1,4 +1,5 @@
 import { MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 type ItemStoriesProps = {
   desktopImage: string;
@@ -16,7 +17,11 @@ function ItemStories({
   date,
 }: ItemStoriesProps) {
   return (
-    <article className="group relative flex h-[375px] flex-col justify-end overflow-hidden px-6 pb-8 sm:h-[500px] sm:px-10">
+    <motion.article
+      className="group relative flex h-[375px] flex-col justify-end overflow-hidden px-6 pb-8 sm:h-[500px] sm:px-10"
+      whileHover={{ y: -6 }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
+    >
       <picture className="absolute inset-0">
         {mobileImage && (
           <source media="(max-width: 639px)" srcSet={mobileImage} />
@@ -43,7 +48,7 @@ function ItemStories({
         </p>
         <MoveRight color="white" size={34} />
       </div>
-    </article>
+    </motion.article>
   );
 }
 
