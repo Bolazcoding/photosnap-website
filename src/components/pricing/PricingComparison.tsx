@@ -10,7 +10,7 @@ function PricingComparison() {
       viewport={{ once: true, amount: 0.15 }}
       variants={{
         hidden: {},
-        visible: { transition: { staggerChildren: 0.08 } },
+        visible: { transition: { staggerChildren: 0.1 } },
       }}
     >
       <motion.h2
@@ -19,7 +19,7 @@ function PricingComparison() {
           hidden: { opacity: 0, y: 22 },
           visible: { opacity: 1, y: 0 },
         }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.75 }}
       >
         Compare
       </motion.h2>
@@ -28,7 +28,7 @@ function PricingComparison() {
         className="mx-auto flex w-full max-w-[731px] flex-col justify-center gap-[22.5px]"
         variants={{
           hidden: {},
-          visible: { transition: { staggerChildren: 0.08 } },
+          visible: { transition: { staggerChildren: 0.1 } },
         }}
       >
         <div className="grid grid-cols-[300px_1fr_1fr_1fr] justify-items-center border-b border-solid border-black pb-[22.5px] text-[12px] font-bold uppercase tracking-[2px] max-sm:grid-cols-1">

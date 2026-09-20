@@ -125,7 +125,7 @@ function StoriesSection() {
       viewport={{ once: true, amount: 0.12 }}
       variants={{
         hidden: {},
-        visible: { transition: { staggerChildren: 0.08 } },
+        visible: { transition: { staggerChildren: 0.1 } },
       }}
     >
       {items.map((item) => (
@@ -137,7 +137,7 @@ function StoriesSection() {
             visible: {
               opacity: 1,
               y: 0,
-              transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+              transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
             },
           }}
         >

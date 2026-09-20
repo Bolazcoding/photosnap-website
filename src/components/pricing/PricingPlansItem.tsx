@@ -27,11 +27,11 @@ function PricingPlansItem({
         visible: {
           opacity: 1,
           y: 0,
-          transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+          transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1] },
         },
       }}
       whileHover={{ y: -8 }}
-      transition={{ duration: 0.25, ease: "easeOut" }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
     >
       <div>
         <h3 className="text-[24px] font-bold leading-[25px]">{plan}</h3>

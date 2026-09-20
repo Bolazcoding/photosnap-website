@@ -9,7 +9,7 @@ function DesignedSection() {
         initial={{ opacity: 0, x: -48 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.35 }}
-        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       >
         <h1 className="text-[2rem] font-bold uppercase leading-tight tracking-widest md:text-[2.5rem]">
           Designed for everyone.
@@ -29,7 +29,7 @@ function DesignedSection() {
         initial={{ opacity: 0, x: 48 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.35 }}
-        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       >
         <source media="(max-width: 767px)" srcSet="/home/mobile/designed-for-everyone.jpg" />
         <source media="(max-width: 1023px)" srcSet="/home/tablet/designed-for-everyone.jpg" />

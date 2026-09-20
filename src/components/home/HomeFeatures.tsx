@@ -28,7 +28,7 @@ function HomeFeatures() {
       viewport={{ once: true, amount: 0.25 }}
       variants={{
         hidden: {},
-        visible: { transition: { staggerChildren: 0.14 } },
+        visible: { transition: { staggerChildren: 0.17 } },
       }}
     >
       {items.map((item) => (
@@ -39,7 +39,7 @@ function HomeFeatures() {
             visible: {
               opacity: 1,
               y: 0,
-              transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+              transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1] },
             },
           }}
         >

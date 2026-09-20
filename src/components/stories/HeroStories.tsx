@@ -7,7 +7,7 @@ function HeroStories() {
         className="absolute inset-0 z-0"
         initial={{ opacity: 0, scale: 1.08 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
       >
         <source
           media="(max-width: 767px)"
@@ -27,7 +27,7 @@ function HeroStories() {
         className="absolute inset-0 z-10 bg-black/45"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.9, delay: 0.15 }}
+        transition={{ duration: 1.1, delay: 0.15 }}
       />
 
       <motion.div
@@ -36,7 +36,7 @@ function HeroStories() {
         animate="visible"
         variants={{
           hidden: {},
-          visible: { transition: { staggerChildren: 0.12, delayChildren: 0.3 } },
+          visible: { transition: { staggerChildren: 0.14, delayChildren: 0.35 } },
         }}
       >
         <motion.p
@@ -45,7 +45,7 @@ function HeroStories() {
             hidden: { opacity: 0, y: 18 },
             visible: { opacity: 1, y: 0 },
           }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.75 }}
         >
           Last month's featured story
         </motion.p>
@@ -55,7 +55,7 @@ function HeroStories() {
             hidden: { opacity: 0, y: 22 },
             visible: { opacity: 1, y: 0 },
           }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.85 }}
         >
           Hazy full moon of Appalachia
         </motion.h1>
@@ -65,7 +65,7 @@ function HeroStories() {
             hidden: { opacity: 0, y: 18 },
             visible: { opacity: 1, y: 0 },
           }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.75 }}
         >
           <span className="opacity-75 pr-2">March 2nd 2020</span>
           <span>by John Appleseed</span>
@@ -77,7 +77,7 @@ function HeroStories() {
             hidden: { opacity: 0, y: 18 },
             visible: { opacity: 1, y: 0 },
           }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.75 }}
         >
           The dissected plateau area, while not actually made up of geological
           mountains, is popularly called "mountains," especially in eastern

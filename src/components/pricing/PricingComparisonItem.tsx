@@ -20,7 +20,7 @@ function PricingComparisonItem({
         hidden: { opacity: 0, x: -20 },
         visible: { opacity: 1, x: 0 },
       }}
-      transition={{ duration: 0.45 }}
+      transition={{ duration: 0.6 }}
     >
       <h4 className="justify-self-start pl-[10px] max-sm:col-span-full max-sm:pl-0">
         {feature}

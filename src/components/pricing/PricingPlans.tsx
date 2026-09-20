@@ -20,7 +20,7 @@ function PricingPlans() {
         initial={{ opacity: 0, y: -16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.65 }}
         onClick={changeType}
       >
         <span
@@ -33,7 +33,7 @@ function PricingPlans() {
         <motion.div
           className="relative h-[32px] w-[64px] cursor-pointer rounded-full bg-[#dfdfdf] p-[3px] hover:bg-black"
           animate={{ backgroundColor: type === "month" ? "#dfdfdf" : "#000000" }}
-          transition={{ duration: 0.25 }}
+          transition={{ duration: 0.35 }}
         >
           <motion.div
             className="h-[26px] w-[26px] rounded-full bg-black hover:bg-white"
@@ -57,7 +57,7 @@ function PricingPlans() {
         viewport={{ once: true, amount: 0.2 }}
         variants={{
           hidden: {},
-          visible: { transition: { staggerChildren: 0.14 } },
+          visible: { transition: { staggerChildren: 0.17 } },
         }}
       >
         <PricingPlansItem

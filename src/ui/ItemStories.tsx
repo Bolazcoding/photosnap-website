@@ -20,14 +20,14 @@ function ItemStories({
     <motion.article
       className="group relative flex h-[375px] flex-col justify-end overflow-hidden px-6 pb-8 sm:h-[500px] sm:px-10"
       whileHover={{ y: -6 }}
-      transition={{ duration: 0.25, ease: "easeOut" }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
     >
       <picture className="absolute inset-0">
         {mobileImage && (
           <source media="(max-width: 639px)" srcSet={mobileImage} />
         )}
         <img
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           src={desktopImage}
           alt=""
         />

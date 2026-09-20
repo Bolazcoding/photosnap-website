@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import Cta from "./Cta";
 import {
   FaFacebookF,
@@ -12,9 +13,18 @@ function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-black">
+    <motion.footer
+      className="bg-black"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.16 } } }}
+    >
       <div className="page-container flex flex-col items-center gap-10 px-6 py-14 text-center sm:px-10 md:flex-row md:items-stretch md:justify-between md:gap-12 md:py-16 md:text-left lg:px-0">
-        <div className="flex flex-col items-center gap-10 md:flex-row md:items-stretch md:gap-12 lg:gap-28">
+        <motion.div
+          className="flex flex-col items-center gap-10 md:flex-row md:items-stretch md:gap-12 lg:gap-28"
+          variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+        >
           <div className="flex flex-col items-center gap-8 md:min-h-[122px] md:items-start md:justify-between">
             <Link to="/" aria-label="Photosnap home">
               <img src="/shared/desktop/footer-logo.svg" alt="Photosnap" />
@@ -82,17 +92,20 @@ function Footer() {
               </li>
             </ul>
           </nav>
-        </div>
-        <div className="flex min-h-[122px] flex-col items-center justify-between gap-8 md:items-end">
+        </motion.div>
+        <motion.div
+          className="flex min-h-[122px] flex-col items-center justify-between gap-8 md:items-end"
+          variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+        >
           <Cta className="text-white" linkTo="/" ctaColor="white">
             Get an invite
           </Cta>
           <p className="text-white/50 text-[15px] font-medium">
             Copyright {year}. All Rights Reserved
           </p>
-        </div>
+        </motion.div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
 
