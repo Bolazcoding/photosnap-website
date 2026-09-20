@@ -1,4 +1,5 @@
 import FeatureItem from "../../ui/FeatureItem";
+import { motion } from "framer-motion";
 
 const items = [
   {
@@ -35,16 +36,36 @@ const items = [
 
 function Features() {
   return (
-    <section className="page-container grid grid-cols-1 items-start gap-16 bg-white px-6 py-20 sm:px-10 md:grid-cols-3 md:gap-8 md:px-0 md:py-28">
+    <motion.section
+      className="page-container grid grid-cols-1 items-start gap-16 bg-white px-6 py-20 sm:px-10 md:grid-cols-3 md:gap-8 md:px-0 md:py-28"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.12 } },
+      }}
+    >
       {items.map((item) => (
-        <FeatureItem
+        <motion.div
           key={item.title}
-          featureImage={item.featureImage}
-          title={item.title}
-          text={item.text}
-        />
+          variants={{
+            hidden: { opacity: 0, y: 32 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+            },
+          }}
+        >
+          <FeatureItem
+            featureImage={item.featureImage}
+            title={item.title}
+            text={item.text}
+          />
+        </motion.div>
       ))}
-    </section>
+    </motion.section>
   );
 }
 

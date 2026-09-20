@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 type PricingPlansItemProps = {
   plan: string;
   text: string;
@@ -14,12 +16,22 @@ function PricingPlansItem({
   color,
 }: PricingPlansItemProps) {
   return (
-    <div
+    <motion.div
       className={`${
         color === "black"
           ? `before:bg-lin-grad relative bg-[#000] pb-[71px] pt-[82px] text-white`
           : "bg-[#f5f5f5] pb-[40px] pt-[56px] text-black "
       } grid w-full px-6 text-center sm:grid-cols-2 sm:px-10 sm:text-start lg:grid-cols-1 lg:text-center`}
+      variants={{
+        hidden: { opacity: 0, y: 32 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+        },
+      }}
+      whileHover={{ y: -8 }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
     >
       <div>
         <h3 className="text-[24px] font-bold leading-[25px]">{plan}</h3>
@@ -42,7 +54,7 @@ function PricingPlansItem({
       >
         Pick plan
       </button>
-    </div>
+    </motion.div>
   );
 }
 

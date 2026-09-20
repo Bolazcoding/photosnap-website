@@ -1,13 +1,36 @@
 import PricingComparisonItem from "./PricingComparisonItem";
+import { motion } from "framer-motion";
 
 function PricingComparison() {
   return (
-    <section className="px-6 pb-20 sm:px-10 sm:pb-28 lg:px-16 xl:px-[165px] xl:pb-40">
-      <h2 className="pb-10 text-center text-[2rem] font-bold uppercase leading-tight tracking-[0.26rem] sm:pb-[60px] sm:text-[40px] sm:leading-[48px] sm:tracking-[4.167px]">
+    <motion.section
+      className="px-6 pb-20 sm:px-10 sm:pb-28 lg:px-16 xl:px-[165px] xl:pb-40"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.15 }}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.08 } },
+      }}
+    >
+      <motion.h2
+        className="pb-10 text-center text-[2rem] font-bold uppercase leading-tight tracking-[0.26rem] sm:pb-[60px] sm:text-[40px] sm:leading-[48px] sm:tracking-[4.167px]"
+        variants={{
+          hidden: { opacity: 0, y: 22 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        transition={{ duration: 0.6 }}
+      >
         Compare
-      </h2>
+      </motion.h2>
 
-      <section className="mx-auto flex w-full max-w-[731px] flex-col justify-center gap-[22.5px]">
+      <motion.section
+        className="mx-auto flex w-full max-w-[731px] flex-col justify-center gap-[22.5px]"
+        variants={{
+          hidden: {},
+          visible: { transition: { staggerChildren: 0.08 } },
+        }}
+      >
         <div className="grid grid-cols-[300px_1fr_1fr_1fr] justify-items-center border-b border-solid border-black pb-[22.5px] text-[12px] font-bold uppercase tracking-[2px] max-sm:grid-cols-1">
           <h3 className="justify-self-start">The features</h3>
           <h3 className="max-sm:hidden">basic</h3>
@@ -62,8 +85,8 @@ function PricingComparison() {
           pro={false}
           business={true}
         />
-      </section>
-    </section>
+      </motion.section>
+    </motion.section>
   );
 }
 
